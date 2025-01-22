@@ -93,7 +93,19 @@ print('Exercise 4:', hometown_info())
 # Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
 
 def list_home_town_items():
+    home_town = {
+        'city': 'Detroit',
+        'state': 'Michigan',
+        'population': 631524
+    }
+
     # your code here
+    home_town_items = []
+
+    for key, val in home_town.items():
+        home_town_items.append(f"{key} = {val}")
+    
+    return home_town_items
 
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
